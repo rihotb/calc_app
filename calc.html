@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>電卓アプリ</title>
+    <link rel="stylesheet" href="calc.css" />
+  </head>
+
+  <body>
+    <input type="text" value="0" maxlength="10" id="result" />
+
+    <table>
+      <tr>
+        <td>
+          <input type="button" value="ac" onclick="allDelete();" />
+        </td>
+        <td>
+          <input type="button" value="c" onclick="cDelete();" />
+        </td>
+        <td>
+          <input type="button" value="/" onclick="calc('/');" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="+" onclick="calc('+');" />
+        </td>
+        <td>
+          <input type="button" value="-" onclick="calc('-');" />
+        </td>
+        <td>
+          <input type="button" value="x" onclick="calc('x');" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="7" onclick="displayNum(7);" />
+        </td>
+        <td>
+          <input type="button" value="8" onclick="displayNum(8);" />
+        </td>
+        <td>
+          <input type="button" value="9" onclick="displayNum(9);" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="4" onclick="displayNum(4);" />
+        </td>
+        <td>
+          <input type="button" value="5" onclick="displayNum(5);" />
+        </td>
+        <td>
+          <input type="button" value="6" onclick="displayNum(6);" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" value="1" onclick="displayNum(1);" />
+        </td>
+        <td>
+          <input type="button" value="2" onclick="displayNum(2);" />
+        </td>
+        <td>
+          <input type="button" value="3" onclick="displayNum(3);" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input
+            class="zero"
+            type="button"
+            value="0"
+            onclick="displayNum(0);"
+          />
+        </td>
+        <td>
+          <input type="button" value="=" onclick="equal();" />
+        </td>
+      </tr>
+    </table>
+
+    <script src="./calc.js"></script>
+  </body>
+</html>

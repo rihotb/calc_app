@@ -1,0 +1,13 @@
+input {
+    width: 40px;
+}
+
+#result {
+    margin-left: 3px;
+    width: 120px;
+    text-align: right;
+}
+
+.zero {
+    width: 83px;
+}
